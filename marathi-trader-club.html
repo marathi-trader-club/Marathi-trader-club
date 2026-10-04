@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marathi Trader Club | Learn. Trade. Automate.</title>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F7F9;--card:#FFFFFF;--ink:#13263B;--mute:#566475;--line:#D9DEE5;--mar:#7A1F4A;--g1:rgba(232,163,23,.13);--g2:rgba(122,31,74,.08);--g3:rgba(30,80,150,.09);--hal:#E8A317;--halink:#13263B;--up:#1F7A4D;--dn:#B3261E;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1B2A;--card:#162536;--ink:#E8EDF3;--mute:#9DAEC0;--line:#2A3D52;--mar:#F0A8C4;--g1:rgba(240,180,41,.08);--g2:rgba(240,168,196,.06);--g3:rgba(90,150,220,.10);--hal:#F0B429;--up:#5CD39B;--dn:#FF8A80}}
+:root[data-theme="dark"]{--bg:#0F1B2A;--card:#162536;--ink:#E8EDF3;--mute:#9DAEC0;--line:#2A3D52;--mar:#F0A8C4;--g1:rgba(240,180,41,.08);--g2:rgba(240,168,196,.06);--g3:rgba(90,150,220,.10);--hal:#F0B429;--up:#5CD39B;--dn:#FF8A80}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(900px 520px at 6% -4%,var(--g1),transparent 62%),radial-gradient(820px 520px at 100% 6%,var(--g3),transparent 62%),var(--bg);color:var(--ink);font:400 17px/1.6 Mukta,sans-serif}
+h1,h2,h3{font-family:'Tiro Devanagari Marathi',serif;font-weight:400;line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4.6rem)}h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:.6rem}h3{font-size:1.3rem}
+a{color:inherit}
+.w{max-width:1120px;margin:0 auto;padding:0 22px}
+.paithani{height:14px;background:
+linear-gradient(135deg,var(--hal) 25%,transparent 25%) -7px 0/14px 14px,
+linear-gradient(225deg,var(--hal) 25%,transparent 25%) -7px 0/14px 14px,
+linear-gradient(315deg,var(--hal) 25%,transparent 25%) 0 0/14px 14px,
+linear-gradient(45deg,var(--hal) 25%,var(--mar) 25%) 0 0/14px 14px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:62px}
+.logo{font-family:'Tiro Devanagari Marathi',serif;font-size:1.35rem;text-decoration:none;white-space:nowrap}
+.logo b{color:var(--mar);font-weight:400}
+nav{display:flex;gap:4px;overflow-x:auto}
+nav a{padding:8px 12px;text-decoration:none;font-weight:600;font-size:.95rem;border-radius:6px;white-space:nowrap;color:var(--mute)}
+nav a.on,nav a:hover{color:var(--ink);background:var(--card)}
+:focus-visible{outline:3px solid var(--mar);outline-offset:3px}
+.btn{display:inline-block;background:var(--hal);color:var(--halink);font:800 1rem Mukta,sans-serif;padding:12px 22px;border:0;border-radius:4px;cursor:pointer;text-decoration:none}
+.btn.o{background:none;border:2px solid var(--ink);color:var(--ink)}
+section{padding:64px 0}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center;padding:56px 0 64px}
+.hero p{font-size:1.15rem;max-width:34em;color:var(--mute);margin:18px 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.chart{background:var(--card);border:1px solid var(--line);padding:16px;border-radius:4px}
+.chart svg{width:100%;height:auto;display:block}
+.cap{font-size:.85rem;color:var(--mute);margin-top:8px}
+.draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:d 2.4s ease-out forwards}
+@keyframes d{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.draw{animation:none;stroke-dashoffset:0}}
+.facts{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{flex:1 1 200px;padding:18px 22px;border-right:1px solid var(--line)}
+.facts div:last-child{border:0}.facts b{font-size:1.5rem;display:block;font-family:'Tiro Devanagari Marathi',serif;font-weight:400}
+.rows{border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:1.4fr 2fr auto;gap:24px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.row p{margin:0;color:var(--mute)}.row small{color:var(--mute);display:block}
+.price{font:800 1.3rem Mukta;text-align:right}.price s{font-weight:400;color:var(--mute);font-size:.95rem;margin-right:6px}
+.split{display:grid;grid-template-columns:1fr 1.4fr;gap:44px}
+.tbl{overflow-x:auto;border:1px solid var(--line);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-weight:800;background:var(--bg)}td.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up)}.dn{color:var(--dn)}
+.ctl{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 18px}
+.chip{border:2px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;border-radius:99px;font:600 .95rem Mukta;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0;border:1px solid var(--line);margin-bottom:16px}
+.kpis div{padding:12px 16px;border-right:1px solid var(--line);background:var(--card)}
+.kpis b{display:block;font-size:1.35rem}.kpis span{font-size:.85rem;color:var(--mute)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;padding:14px 0 14px 54px;border-bottom:1px solid var(--line);position:relative}
+.steps li:before{content:counter(s);position:absolute;left:0;top:12px;width:36px;height:36px;border-radius:50%;background:var(--mar);color:var(--bg);display:grid;place-items:center;font-weight:800}
+.q{border:1px solid var(--line);background:var(--card);padding:26px;max-width:640px}
+.q .opts{display:grid;gap:10px;margin-top:14px}
+.q .chip{text-align:left;border-radius:4px}
+.note{background:var(--card);border-left:5px solid var(--hal);padding:14px 18px;font-size:.92rem;color:var(--mute);margin-top:22px}
+footer{background:var(--ink);color:var(--bg);padding:44px 0 30px;margin-top:40px}
+footer .g{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer a{display:block;color:inherit;opacity:.85;text-decoration:none;padding:3px 0}
+footer small{opacity:.7;display:block;margin-top:26px}
+@media(max-width:820px){.hero,.split,footer .g{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:6px}.price{text-align:left}section{padding:44px 0}.bar{height:auto;flex-wrap:wrap;padding:8px 0}}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--hal);color:var(--halink);padding:10px 14px;z-index:9}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.pt{font-size:clamp(2rem,4vw,3rem);margin-bottom:.6rem}
+nav a.on{box-shadow:inset 0 -3px 0 var(--hal);border-radius:0}
+.nav-cta{padding:9px 16px;font-size:.95rem;white-space:nowrap}
+.btn.sm{padding:9px 18px;font-size:.92rem;margin-top:8px;text-align:center}
+.row:hover{background:var(--card)}.row>div:last-child{display:flex;flex-direction:column;align-items:flex-end}
+input[type=checkbox]{width:22px;height:22px;accent-color:var(--mar)}
+.trust{font-size:.95rem!important;margin:0!important}
+.term{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 12px 32px -20px rgba(19,38,59,.3)}
+.term .top{display:flex;justify-content:space-between;gap:10px;padding:12px 18px;border-bottom:1px solid var(--line);font-size:.9rem;color:var(--mute)}
+.term .k{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+.term .k div{padding:14px 18px;border-right:1px solid var(--line)}.term .k div:last-child{border:0}
+.term .k b{display:block;font:400 1.7rem 'Tiro Devanagari Marathi',serif}.term .k span{font-size:.85rem;color:var(--mute)}
+.term svg{width:100%;height:auto;display:block;padding:8px 8px 0}.term .cap{padding:0 18px 14px;color:var(--mute)}
+.dot{opacity:0;animation:f 0s 2.3s forwards}@keyframes f{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.dot{animation:none;opacity:1}}
+details{border-bottom:1px solid var(--line)}details:first-of-type{border-top:2px solid var(--ink)}
+summary{cursor:pointer;font-weight:800;list-style:none;display:flex;justify-content:space-between;align-items:center;min-height:56px;gap:16px}
+summary::-webkit-details-marker{display:none}summary::after{content:'+';font-size:1.5rem}details[open] summary::after{content:'\2013'}
+details p{margin:0 0 18px;color:var(--mute);max-width:44em}
+.steps small{display:block;color:var(--mute)}
+.band{background:var(--ink);color:var(--bg);padding:56px 0}.band h2{margin-bottom:10px}.band p{opacity:.85;max-width:34em;margin:0 0 22px}
+.band .btn.o{border-color:var(--bg);color:var(--bg)}
+main:has(.band)+footer{margin-top:0}
+.tint{background:linear-gradient(135deg,var(--g1),var(--g3) 55%,var(--g2)),var(--card);border-block:1px solid var(--line)}
+.chart,.q,.tbl,.kpis div{background:linear-gradient(160deg,var(--g1),transparent 55%),var(--card)}
+.band{background:linear-gradient(120deg,var(--g3),transparent 60%),var(--ink)}
+
+.paithani{border-bottom:5px solid #13263B}
+.facts div{border-top:4px solid #13263B}.facts div:nth-child(2){border-top-color:var(--hal)}.facts div:nth-child(3){border-top-color:#7A1F4A}.facts div:nth-child(4){border-top-color:#13263B}
+.term::before{content:'';display:block;height:5px;background:linear-gradient(90deg,#13263B 0 34%,#E8A317 34% 67%,#7A1F4A 67%)}
+.chip[aria-pressed=true]{background:var(--mar);color:var(--bg);border-color:var(--mar)}
+.steps li:nth-child(3n+1):before{background:var(--ink);color:var(--bg)}
+.steps li:nth-child(3n+2):before{background:var(--hal);color:#13263B}
+.tint{background:linear-gradient(120deg,var(--g1),var(--g3) 50%,var(--g2)),var(--card)}
+.band{background:linear-gradient(120deg,#13263B 0%,#3A2150 60%,#6B1F45 100%);color:#F4F6F9}
+.band .btn.o{border-color:#F4F6F9;color:#F4F6F9}
+footer{background:#13263B;color:#F4F6F9;border-top:5px solid #E8A317}
+
+#app:focus{outline:none}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:2px solid var(--line);padding:10px 12px;border-radius:4px;width:100%}
+input[type=checkbox]{width:22px;height:22px}
+input[aria-invalid="true"]{border-color:var(--dn)}
+.f{margin-bottom:14px}.f label{display:block;font-weight:600;margin-bottom:4px}
+.err{display:block;color:var(--dn);font-size:.88rem;min-height:1.3em;margin:0}.err.ok{color:var(--up)}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:start}
+.sumbox{border:1px solid var(--line);background:var(--card);padding:22px;position:sticky;top:84px}
+.sumbox .r{display:flex;justify-content:space-between;gap:12px;padding:6px 0}.sumbox .t{border-top:2px solid var(--ink);margin-top:6px;padding-top:10px;font-size:1.15rem}
+.bar2{height:8px;background:var(--line);border-radius:4px;overflow:hidden}.bar2>i{display:block;height:100%;background:var(--hal)}
+.mg{display:grid;grid-template-columns:repeat(auto-fill,minmax(70px,1fr));gap:4px}
+.mg div{padding:6px;text-align:center;font-size:.8rem;border-radius:3px;font-variant-numeric:tabular-nums}
+.mg .p{background:rgba(31,122,77,.16)}.mg .m{background:rgba(179,38,30,.16)}
+th button{all:unset;cursor:pointer;font-weight:800;display:inline-flex;gap:6px;min-height:24px}
+th button:focus-visible{outline:3px solid var(--mar);outline-offset:2px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 24px;margin:18px 0}.dl dt{color:var(--mute)}.dl dd{margin:0;font-weight:600}
+.mods{list-style:none;padding:0;margin:0}.mods li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:14px}.mods b{min-width:84px}
+#th{padding:8px 14px;white-space:nowrap}
+@media(max-width:820px){.two{grid-template-columns:1fr}.sumbox{position:static}}
+
+:root{--bg:#F7F9FF;--card:#FFFFFF;--ink:#0B1F4B;--mute:#46567A;--line:#D5DEF3;--mar:#C2185B;--hal:#FFA000;--halink:#0B1F4B;--blu:#2457F5;--up:#0B7F55;--dn:#C62828;--g1:rgba(255,160,0,.16);--g2:rgba(194,24,91,.10);--g3:rgba(36,87,245,.12)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1430;--card:#121E42;--ink:#EAF0FF;--mute:#A8B8DC;--line:#25356A;--mar:#FF7AB2;--hal:#FFB300;--blu:#7FA2FF;--up:#3DDC97;--dn:#FF8A80;--g1:rgba(255,179,0,.12);--g2:rgba(255,122,178,.10);--g3:rgba(127,162,255,.16)}}
+:root[data-theme="dark"]{--bg:#0B1430;--card:#121E42;--ink:#EAF0FF;--mute:#A8B8DC;--line:#25356A;--mar:#FF7AB2;--hal:#FFB300;--blu:#7FA2FF;--up:#3DDC97;--dn:#FF8A80;--g1:rgba(255,179,0,.12);--g2:rgba(255,122,178,.10);--g3:rgba(127,162,255,.16)}
+main a:not(.btn){color:var(--blu);text-underline-offset:3px}
+.paithani{border-bottom:5px solid var(--blu)}
+.facts div{border-top:5px solid var(--blu)}.facts div:nth-child(2){border-top-color:var(--hal)}.facts div:nth-child(3){border-top-color:var(--mar)}.facts div:nth-child(4){border-top-color:var(--blu)}
+.term::before{background:linear-gradient(90deg,#2457F5 0 34%,#FFA000 34% 67%,#C2185B 67%);height:6px}
+.chip[aria-pressed=true]{background:var(--blu);color:var(--bg);border-color:var(--blu)}
+.steps li:nth-child(3n+1):before{background:var(--blu);color:var(--bg)}
+.steps li:nth-child(3n+2):before{background:var(--hal);color:#0B1F4B}
+.band{background:linear-gradient(120deg,#0B1F4B 0%,#2457F5 58%,#C2185B 100%);color:#fff}
+.band .btn.o{border-color:#fff;color:#fff}
+footer{background:#0B1F4B;color:#F2F6FF;border-top:5px solid #FFA000}
+.btn{box-shadow:0 6px 16px -8px rgba(255,160,0,.8)}.btn.o{box-shadow:none}
+</style>
+</head>
+<body>
+<div class="paithani" aria-hidden="true"></div>
+<a class="skip" href="#app">Skip to content</a>
+<header><div class="w bar"><a class="logo" href="#/">Marathi <b>Trader</b> Club</a>
+<nav id="nav" aria-label="Main"><a href="#/courses">Courses</a><a href="#/algo">Algo marketplace</a><a href="#/portfolio">Portfolio</a><a href="#/free">Free tools</a><a href="#/finder">Style finder</a><a href="#/my">My learning</a></nav><button class="chip" id="th" data-a="theme" type="button">Dark mode</button><a class="btn nav-cta" href="#/course/price-action">Free course</a></div></header>
+<main id="app" tabindex="-1"></main>
+<footer><div class="w g"><div><div class="logo" style="font-size:1.5rem">Marathi Trader Club</div><p style="opacity:.8;max-width:30em">Structured trading education and rule-based algo strategies for working professionals.</p></div>
+<div><b>Learn</b><a href="#/courses">Courses</a><a href="#/free">Free tools</a><a href="#/finder">Style finder</a><a href="#/my">My learning</a></div>
+<div><b>Automate</b><a href="#/algo">Algo marketplace</a><a href="#/portfolio">Portfolio engine</a><a href="#/about">About and contact</a></div>
+<div class="w" style="grid-column:1/-1;padding:0"><small>Demo site with sample content and illustrative numbers. Trading in F&amp;O involves risk of loss; nothing here is investment advice or a promise of returns.</small></div></div></footer>
+<script>
+const $=s=>document.querySelector(s),app=$('#app');
+const inr=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmtDate=d=>new Date(d).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+function rng(seed){return()=>{seed=(seed*16807)%2147483647;return(seed-1)/2147483646}}
+function walk(seed,total,n){const R=rng(seed),r=[];let t=0;for(let i=0;i<n;i++){const v=R()-.28;r.push(v);t+=v}const k=total/(t||1);return r.map(v=>v*k)}
+function stats(m){let c=0,pk=0,dd=0,g=0,l=0,pos=0;const pts=[0];m.forEach(v=>{c+=v;pts.push(c);pk=Math.max(pk,c);dd=Math.max(dd,pk-c);v>=0?(g+=v,pos++):(l-=v)});return{pts,total:c,dd,win:pos/m.length*100,pf:l?g/l:0}}
+function pathOf(pts,w,h,pad=14){const mn=Math.min(...pts),mx=Math.max(...pts),sx=w/(pts.length-1),sy=(h-2*pad)/((mx-mn)||1);return pts.map((p,i)=>(i?'L':'M')+(i*sx).toFixed(1)+' '+(h-pad-(p-mn)*sy).toFixed(1)).join(' ')}
+function chartSVG(pts,w,h,label){const d=pathOf(pts,w,h),m=d.match(/L([\d.]+) ([\d.]+)$/);return`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${label}"><g style="stroke:var(--line)">${[1,2,3].map(i=>`<line x1="0" x2="${w}" y1="${h/4*i}" y2="${h/4*i}"/>`).join('')}</g><path d="${d} L${w} ${h} L0 ${h}Z" style="fill:var(--g1)"/><path class="draw" d="${d}" fill="none" style="stroke:var(--blu)" stroke-width="3" stroke-linejoin="round"/><circle class="dot" cx="${m[1]}" cy="${m[2]}" r="6" style="fill:var(--blu)"/></svg>`}
+const RISKS=[['Conservative',15,3],['Balanced',24,4],['Aggressive',36,6]],CAPS=[100000,200000,500000,1000000];
+function series(ci,ri,slip){const cost=slip?RISKS[ri][2]/12:0,m=walk(ci*13+ri*5+7,RISKS[ri][1]*29/12,29).map(v=>v-cost),s=stats(m);s.m=m;s.ann=s.total*12/29;return s}
+const byId=(L,id)=>L.find(x=>x.id===id);
+const C=[
+{id:'options-mastery',t:'Options Trading Mastery',k:'On-demand',meta:'On-demand, 20+ hours, 6 modules, 1-year access',d:'Buying, selling, hedging, adjustments and expiry-day plans from the basics up.',p:4999,m:7999,who:'Anyone who wants one complete options course.',mods:['Option basics and Greeks','Reading the option chain','Buying strategies','Selling strategies and hedging','Adjustments and firefighting','Expiry-day and result-day plans']},
+{id:'swing',t:'Swing Trading with Algo Hedge',k:'On-demand',meta:'On-demand, 10+ hours, 4 modules',d:'A swing portfolio you can run in about four hours a week, with an automated hedge.',p:3999,m:5999,who:'Working professionals with limited screen time.',mods:['Building a swing watchlist','Five swing setups','Position sizing across a portfolio','Setting up the algo hedge']},
+{id:'intraday',t:'Intraday and Scalping Masterclass',k:'Live',meta:'Live, 14 strategies, recording included',d:'Gap, CPR, moving-average and zone setups for Nifty and Bank Nifty, with stop-loss rules.',p:1999,m:2999,who:'Traders who can watch the market during the day.',mods:['Chart setup for intraday','Gap-fill and gap-continuation setups','CPR and moving-average setups','Scalping on the 1-minute chart','Stop-loss management and when to avoid trading']},
+{id:'spreads',t:'Option Spreads Masterclass',k:'On-demand',meta:'On-demand, 4 hours, 1-year access',d:'Debit, credit, calendar and ratio spreads, plus how to adjust a spread that goes wrong.',p:1499,m:2499,who:'Traders who want capped risk and no overnight surprises.',mods:['Debit and credit spreads','Calendar and ratio spreads','Adjusting a losing spread','Hedging a portfolio with spreads']},
+{id:'mentorship',t:'6-Day Live Options Mentorship',k:'Live',meta:'Live on Zoom, 7 to 10 PM, recordings included',d:'Six evenings, one strategy set a night, with templates and a capital-management framework.',p:2999,m:4999,who:'People who learn best with a mentor and a deadline.',mods:['Day 1: option chain, OI and Greeks','Day 2: intraday momentum setups','Day 3: expiry-day selling','Day 4: spreads and hedges','Day 5: stock options','Day 6: risk and capital management']},
+{id:'price-action',t:'Price Action Basics',k:'Free',meta:'Free, self-paced, 4 modules',d:'Support, resistance, trend and candles. Start here if you have never placed a trade.',p:0,m:0,who:'Complete beginners.',mods:['Support and resistance','Trend and market structure','Candlestick basics','Placing a first paper trade']}];
+const A=[['Monday Opener','Nifty','Mon','Intraday buying','b',31,60000],['Tuesday Range','Nifty','Tue','Intraday selling','s',22,120000],['Wednesday Gap','Sensex','Wed','Intraday buying','b',28,70000],['Thursday Expiry','Nifty','Thu','Expiry spread','s',19,150000],['Friday Reversal','Sensex','Fri','Intraday buying','b',26,65000],['Trend Catcher','Nifty','Mon–Fri','Trend follow','b',24,100000],['Sensex 3DTE Opener','Sensex','Tue','Weekly buying','b',34,80000],['CPR Fade','Nifty','Wed','Intraday selling','s',20,110000],['Zone Breakout','Nifty','Thu','Intraday buying','b',27,75000],['Swing Hedge (long)','Nifty','Weekly','Portfolio hedge','h',12,90000],['Swing Hedge (pair)','Nifty','Weekly','Portfolio hedge','h',15,90000]].map((r,i)=>{const a={id:'a'+(i+1),n:'MTC-'+String(i+1).padStart(2,'0')+' '+r[0],ix:r[1],day:r[2],ty:r[3],g:r[4],ret:r[5],min:r[6]};return Object.assign(a,stats(walk(i*17+3,a.ret*29/12,29)))});
+const orders=()=>store.get('mtc_orders',[]),owned=id=>orders().some(o=>o.cid===id);
+const COUPONS={MTC10:10,WELCOME15:15};
+function cost(c,code){const off=COUPONS[code]||0,disc=Math.round(c.p*off/100),sub=c.p-disc,gst=Math.round(sub*.18);return{off,disc,gst,total:sub+gst}}
+const row=c=>`<div class="row"><div><h3><a href="#/course/${c.id}">${c.t}</a></h3><small>${c.meta}</small></div><p>${c.d}</p><div><div class="price">${c.p?`<s><span class="vh">Was </span>${inr(c.m)}</s><span class="vh">Now </span>${inr(c.p)}`:'Free'}</div><a class="btn sm" href="#/${owned(c.id)?'my':'enroll/'+c.id}">${owned(c.id)?'Open':c.p?'Enroll':'Start free'}</a></div></div>`;
+let CF='All',F={ix:'All',g:'All',key:'ret',dir:-1},P={ci:2,ri:1,slip:true},TOOL='size',CP='',CID='',qi=0,qa=[];
+function courseList(){const L=C.filter(c=>CF==='All'||c.k===CF);return`<div class="ctl" role="group" aria-label="Format">${['All','On-demand','Live','Free'].map(v=>`<button class="chip" data-a="fc" data-v="${v}" aria-pressed="${CF===v}">${v}</button>`).join('')}</div><p role="status">Showing ${L.length} of ${C.length} courses</p><div class="rows">${L.map(row).join('')}</div>`}
+function algoTable(L,sort){const cols=[['n','Strategy'],['ix','Index'],['day','Day'],['ty','Type'],['min','Min capital'],['ret','Annual return'],['win','Winning months'],['dd','Max drawdown']];return`<table><caption class="vh">Algo strategies, sample data</caption><tr>${cols.map(([k,t])=>`<th scope="col"${sort?` aria-sort="${F.key===k?(F.dir>0?'ascending':'descending'):'none'}"`:''}>${sort?`<button data-a="sort" data-k="${k}">${t}${F.key===k?(F.dir>0?' ▲':' ▼'):''}</button>`:t}</th>`).join('')}</tr>${L.map(a=>`<tr><td><a href="#/algo/${a.id}">${a.n}</a></td><td>${a.ix}</td><td>${a.day}</td><td>${a.ty}</td><td class="n">${inr(a.min)}</td><td class="n up">${a.ret}%</td><td class="n">${a.win.toFixed(0)}%</td><td class="n dn">${a.dd.toFixed(1)}%</td></tr>`).join('')}</table>`}
+function algoView(){const L=A.filter(a=>(F.ix==='All'||a.ix===F.ix)&&(F.g==='All'||a.g===F.g)).sort((x,y)=>{const a=x[F.key],b=y[F.key];return(typeof a==='string'?a.localeCompare(b):a-b)*F.dir});const ch=(act,cur,o)=>o.map(([v,t])=>`<button class="chip" data-a="${act}" data-v="${v}" aria-pressed="${cur===v}">${t}</button>`).join('');return`<div class="ctl" role="group" aria-label="Index">${ch('fix',F.ix,[['All','All indices'],['Nifty','Nifty'],['Sensex','Sensex']])}</div><div class="ctl" role="group" aria-label="Style">${ch('fg',F.g,[['All','All styles'],['b','Buying'],['s','Selling'],['h','Hedge']])}</div><p role="status">Showing ${L.length} of ${A.length} strategies</p>${L.length?`<div class="tbl">${algoTable(L,true)}</div>`:'<p>No strategy matches these filters. Choose All indices and All styles to reset.</p>'}`}
+function pView(){const s=series(P.ci,P.ri,P.slip),cap=CAPS[P.ci],days=['Mon','Tue','Wed','Thu','Fri','Weekly'];const best=Math.max(...s.m),worst=Math.min(...s.m);
+return`<div class="kpis"><div><b class="up">${s.ann.toFixed(1)}%</b><span>Annual return</span></div><div><b>${inr(cap*s.total/100)}</b><span>29-month net P&amp;L</span></div><div><b class="dn">${s.dd.toFixed(1)}%</b><span>Max drawdown (${inr(cap*s.dd/100)})</span></div><div><b>${s.win.toFixed(0)}%</b><span>Winning months</span></div><div><b>${s.pf.toFixed(2)}</b><span>Profit factor</span></div></div><div class="chart">${chartSVG(s.pts,560,260,'Sample equity curve over 29 months')}<div class="cap">Cumulative return over 29 months. Best month ${best.toFixed(1)}%, worst month ${worst.toFixed(1)}%.</div></div><h3 style="margin:22px 0 8px">Monthly returns</h3><div class="mg">${s.m.map((v,i)=>`<div class="${v<0?'m':'p'}">M${i+1}<br><b>${v>0?'+':''}${v.toFixed(1)}</b></div>`).join('')}</div><h3 style="margin:22px 0 8px">Weekly schedule</h3><div class="tbl"><table><tr>${days.map(d=>`<th>${d}</th>`).join('')}</tr><tr>${days.map(d=>`<td style="white-space:normal;vertical-align:top">${A.filter(a=>a.day===d||(a.day==='Mon–Fri'&&d!=='Weekly')).map(a=>`<a href="#/algo/${a.id}">${a.n.slice(0,6)}</a>`).join('<br>')||'None'}</td>`).join('')}</tr></table></div>`}
+const STY=[['Defined-risk spreads','Credit and debit spreads cap your loss, so a gap against you hurts less.','spreads'],['Expiry-day selling','Short holding periods with fixed rules, built around weekly expiries.','mentorship'],['Intraday buying','Directional trades opened and closed the same day, with small planned losses.','intraday'],['Swing with a hedge','Positions held for days or weeks, protected by an automated hedge.','swing']];
+const QZ=[['How much capital will you trade with?',['Under ₹50,000','₹50,000 to ₹2 lakh','Above ₹2 lakh'],[[3,0,2,2],[2,2,2,2],[1,3,1,3]]],['How much time can you give on trading days?',['A few minutes','An hour or two','Full market hours'],[[2,0,0,3],[2,2,1,2],[0,3,3,0]]],['How do you feel about a stop-loss being hit?',['I dislike it a lot','Fine if it was planned','Small frequent losses are fine'],[[3,1,0,2],[2,2,2,2],[0,2,3,1]]],['How long do you want to hold a position?',['Same day','A few days','Weeks'],[[0,3,3,0],[2,1,1,3],[1,0,0,3]]],['How much options experience do you have?',['None yet','Some trades placed','Several years'],[[3,0,1,3],[2,2,2,2],[1,3,3,1]]]];
+function quizView(){if(qi<QZ.length){const q=QZ[qi];return`<p class="cap">Question ${qi+1} of ${QZ.length}</p><div class="bar2" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="${QZ.length}" aria-valuenow="${qi}"><i style="width:${qi/QZ.length*100}%"></i></div><h2 tabindex="-1" style="margin-top:18px">${q[0]}</h2><div class="opts">${q[1].map((o,k)=>`<button class="chip" data-a="qans" data-k="${k}">${o}</button>`).join('')}</div>${qi?'<p style="margin-top:16px"><button class="chip" data-a="qback">Back</button></p>':''}`}
+const sc=[0,0,0,0];qa.forEach((k,i)=>QZ[i][2][k].forEach((v,j)=>sc[j]+=v));const rk=sc.map((v,i)=>[v,i]).sort((a,b)=>b[0]-a[0]),top=STY[rk[0][1]];
+return`<h2 tabindex="-1">Your best fit: ${top[0]}</h2><p>${top[1]}</p><p><a class="btn" href="#/course/${top[2]}">View the matching course</a></p><h3 style="margin:22px 0 10px">Fit score for all four styles</h3>${rk.map(([v,i])=>`<div style="margin-bottom:12px"><div style="display:flex;justify-content:space-between"><span>${STY[i][0]}</span><b>${Math.round(v/15*100)}%</b></div><div class="bar2"><i style="width:${v/15*100}%"></i></div></div>`).join('')}<p style="margin-top:20px"><button class="chip" data-a="qreset">Retake the quiz</button></p>`}
+const STEPS=['Trading goals and objectives','Risk management rules','Strategies you will trade','Entry and exit criteria','Position sizing','Trade journal system','Performance metrics','Trading schedule','Psychology rules'];
+const fld=(id,l,type,val,ex='')=>`<div class="f"><label for="${id}">${l}</label><input id="${id}" type="${type}" ${val!==''?`value="${val}"`:''} ${ex}><small class="err" id="e-${id}"></small></div>`;
+function toolView(){if(TOOL==='size')return`<div class="two"><div>${fld('z-cap','Trading capital (₹)','number',500000,'min="0" step="any" inputmode="decimal" data-z')}${fld('z-rk','Risk per trade (%)','number',1,'min="0" step="any" inputmode="decimal" data-z')}${fld('z-en','Entry price (₹)','number',150,'min="0" step="any" inputmode="decimal" data-z')}${fld('z-st','Stop-loss price (₹)','number',144,'min="0" step="any" inputmode="decimal" data-z')}</div><div class="sumbox" id="zo" aria-live="polite"></div></div>`;
+if(TOOL==='plan'){const p=store.get('mtc_plan',[]);return`<p id="pp" role="status">${p.filter(x=>x&&x.trim()).length} of 9 steps written</p>${STEPS.map((t,i)=>`<div class="f"><label for="p${i}">Step ${i+1}: ${t}</label><textarea id="p${i}" rows="2" data-p="${i}">${esc(p[i]||'')}</textarea></div>`).join('')}`}
+const T=store.get('mtc_trades',[]),pl=t=>(t.ex-t.en)*t.q*(t.side==='Buy'?1:-1),w=T.filter(t=>pl(t)>0),l=T.filter(t=>pl(t)<0),net=T.reduce((a,t)=>a+pl(t),0);
+return`<form id="jf" novalidate class="q" style="max-width:none"><div class="two" style="gap:0 24px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">${fld('j-d','Date','date',new Date().toISOString().slice(0,10))}${fld('j-s','Symbol','text','','maxlength="20" autocomplete="off"')}<div class="f"><label for="j-side">Side</label><select id="j-side"><option>Buy</option><option>Sell</option></select><small class="err"></small></div>${fld('j-en','Entry price','number','','min="0" step="any"')}${fld('j-ex','Exit price','number','','min="0" step="any"')}${fld('j-q','Quantity','number','','min="1" step="1"')}</div><p class="err" id="jm" role="alert"></p><button class="btn" type="submit">Add trade</button></form><div class="kpis" style="margin-top:18px"><div><b>${T.length}</b><span>Trades</span></div><div><b>${T.length?Math.round(w.length/T.length*100):0}%</b><span>Win rate</span></div><div><b class="${net<0?'dn':'up'}">${inr(net)}</b><span>Net P&amp;L</span></div><div><b>${w.length?inr(w.reduce((a,t)=>a+pl(t),0)/w.length):'₹0'}</b><span>Average win</span></div><div><b>${l.length?inr(l.reduce((a,t)=>a+pl(t),0)/l.length):'₹0'}</b><span>Average loss</span></div><div><b>${inr(T.length?net/T.length:0)}</b><span>Expectancy per trade</span></div></div>${T.length?`<div class="tbl"><table><tr><th>Date</th><th>Symbol</th><th>Side</th><th>Entry</th><th>Exit</th><th>Qty</th><th>P&amp;L</th><th><span class="vh">Remove</span></th></tr>${T.map((t,i)=>[t,i]).reverse().map(([t,i])=>`<tr><td>${fmtDate(t.d)}</td><td>${esc(t.sym)}</td><td>${t.side}</td><td class="n">${t.en}</td><td class="n">${t.ex}</td><td class="n">${t.q}</td><td class="n ${pl(t)<0?'dn':'up'}">${inr(pl(t))}</td><td><button class="chip" data-a="jdel" data-i="${i}" aria-label="Remove trade ${esc(t.sym)}">Remove</button></td></tr>`).join('')}</table></div><p><button class="chip" data-a="jclear">Clear all trades</button></p>`:'<p>No trades yet. Add your first trade above and the statistics will update.</p>'}`}
+function calcSize(){const g=i=>parseFloat($('#z-'+i).value),cap=g('cap'),rk=g('rk'),en=g('en'),st=g('st'),o=$('#zo');if([cap,rk,en,st].some(x=>!(x>0)))return o.innerHTML='<p>Enter a positive number in every field.</p>';if(rk>10)return o.innerHTML='<p class="dn">Risk per trade above 10% is not supported. Lower it.</p>';if(en===st)return o.innerHTML='<p class="dn">Entry and stop-loss must be different prices.</p>';const risk=cap*rk/100,per=Math.abs(en-st),q=Math.floor(risk/per),val=q*en;o.innerHTML=`<div class="r"><span>Amount at risk</span><b>${inr(risk)}</b></div><div class="r"><span>Risk per unit</span><b>₹${per.toFixed(2)}</b></div><div class="r t"><span>Quantity</span><b>${q.toLocaleString('en-IN')}</b></div><div class="r"><span>Position value</span><b>${inr(val)}</b></div><div class="r"><span>Direction</span><b>${st<en?'Long':'Short'}</b></div>${val>cap?'<p class="dn">Position value is above your capital. You would need margin or a smaller size.</p>':''}${q<1?'<p class="dn">The stop is too wide for this risk amount, so quantity rounds to zero.</p>':''}`}
+const nf=()=>`<section><div class="w"><h1 class="pt">Page not found</h1><p>This address does not match any page.</p><a class="btn" href="#/">Back to home</a></div></section>`;
+function sumHTML(c){if(!c.p)return`<h3>Free course</h3><p>No payment needed.</p>`;const k=cost(c,CP);return`<h3>Order summary</h3><div class="r"><span>${c.t}</span><b>${inr(c.p)}</b></div>${k.off?`<div class="r"><span>Coupon ${CP} (${k.off}% off)</span><b class="up">−${inr(k.disc)}</b></div>`:''}<div class="r"><span>GST at 18%</span><b>${inr(k.gst)}</b></div><div class="r t"><span>Total</span><b>${inr(k.total)}</b></div>`}
+const pages={
+home(){const s=series(2,1,true);return`<div class="w hero"><div><h1>Learn. Trade. Automate.</h1><p>Marathi Trader Club teaches options and swing trading for the Indian market, then gives you backtested algo strategies you can run on AlgoTest. No tips, no signals. Rules you can read and numbers you can check.</p><div class="btns"><a class="btn" href="#/course/price-action">Start the free course</a><a class="btn o" href="#/portfolio">Check the portfolio</a></div><p class="trust" style="margin-top:18px!important">Free to start. No signals sold. Every backtest includes costs.</p></div><div class="term"><div class="top"><span>Balanced portfolio, ${inr(CAPS[2])}</span><span>Sample data</span></div><div class="k"><div><b class="up">+${s.ann.toFixed(0)}%</b><span>Annual return</span></div><div><b>${s.dd.toFixed(1)}%</b><span>Max drawdown</span></div><div><b>${s.win.toFixed(0)}%</b><span>Winning months</span></div></div>${chartSVG(s.pts,560,300,'Sample equity curve over 29 months')}<div class="cap">Cumulative return over 29 months, slippage included. Demo data.</div></div></div>
+<div class="w"><div class="facts"><div><b>${A.length}</b>algo strategies</div><div><b>${C.length}</b>courses, 1 free</div><div><b>0</b>signals or tips sold</div><div><b>AlgoTest</b>no coding to deploy</div></div></div>
+<section><div class="w"><h2>Courses</h2><p style="color:var(--mute);max-width:36em">Pick by how much time you have, not by hype.</p><div class="rows">${C.slice(0,3).map(row).join('')}</div><p><a href="#/courses">All courses</a></p></div></section>
+<section class="tint"><div class="w split"><div><h2>How it works</h2><p style="color:var(--mute)">The order matters. Skipping to automation is how accounts get hurt.</p></div><ol class="steps"><li><b>Learn the rules</b><small>Start with the <a href="#/course/price-action">free price-action course</a>, then take an options or swing course.</small></li><li><b>Practice without risk</b><small>Paper trade each strategy on AlgoTest and log every trade in the <a href="#/free">free journal</a>.</small></li><li><b>Automate what works</b><small>Deploy the backtested algos one at a time, or as a <a href="#/portfolio">portfolio</a>.</small></li></ol></div></section>
+<section><div class="w split"><div><h2>Then automate it</h2><p style="color:var(--mute)">Every algo ships with its backtest, including the losing months, the exact AlgoTest settings and a checklist to run before going live. Costs for brokerage, tax and slippage are inside the numbers.</p><a class="btn" href="#/algo">Algo marketplace</a></div><div class="tbl">${algoTable(A.slice(0,5))}</div></div></section>
+<section style="padding-top:0"><div class="w"><h2>Questions</h2><details><summary>Do I need to know coding?</summary><p>No. Strategies are set up in AlgoTest's visual builder, and each algo comes with step-by-step settings.</p></details><details><summary>Are the returns guaranteed?</summary><p>No. Every strategy has losing months and drawdowns, and we show them. Figures on this demo site are sample data.</p></details><details><summary>How much capital do I need?</summary><p>The portfolio engine is sized from ₹1 lakh. Each strategy page lists its own minimum capital.</p></details><details><summary>Are the courses live or recorded?</summary><p>Most are on-demand. The intraday masterclass and the 6-day mentorship run live, and recordings are included.</p></details></div></section>
+<div class="band"><div class="w"><h2>Not sure where to start?</h2><p>Take the free course, or answer five questions to find the options style that fits your capital and time.</p><div class="btns"><a class="btn" href="#/course/price-action">Start the free course</a><a class="btn o" href="#/finder">Find my style</a></div></div></div>`},
+courses(){return`<section><div class="w"><h1 class="pt">Courses</h1><p style="color:var(--mute);max-width:40em">Prices are sample values for this demo and exclude 18% GST, which is added at checkout.</p><div id="cl">${courseList()}</div></div></section>`},
+course(id){const c=byId(C,id);if(!c)return nf();return`<section><div class="w two"><div><p><a href="#/courses">All courses</a></p><h1 class="pt">${c.t}</h1><p style="max-width:36em">${c.d}</p><dl class="dl"><dt>Format</dt><dd>${c.k}</dd><dt>Details</dt><dd>${c.meta}</dd><dt>Best for</dt><dd>${c.who}</dd></dl><h2 style="margin-top:30px">What you will cover</h2><ol class="mods">${c.mods.map((m,i)=>`<li><b>Module ${i+1}</b>${m}</li>`).join('')}</ol></div><aside class="sumbox"><div class="price" style="text-align:left;font-size:1.8rem">${c.p?`<s style="font-size:1rem"><span class="vh">Was </span>${inr(c.m)}</s> ${inr(c.p)}`:'Free'}</div>${c.p?'<p class="cap">Plus 18% GST at checkout.</p>':''}${owned(c.id)?'<p>You are enrolled.</p><a class="btn" href="#/my">Open My learning</a>':`<a class="btn" href="#/enroll/${c.id}">${c.p?'Enroll now':'Start free'}</a>`}</aside></div></section>`},
+enroll(id){const c=byId(C,id);if(!c)return nf();if(owned(id))return`<section><div class="w"><h1 class="pt">You are already enrolled</h1><p>${c.t} is in your account.</p><a class="btn" href="#/my">Open My learning</a></div></section>`;CP='';CID=id;return`<section><div class="w two"><form id="enr" novalidate><h1 class="pt">Enroll in ${c.t}</h1>${fld('name','Full name','text','','autocomplete="name"')}${fld('email','Email','email','','autocomplete="email"')}${c.p?fld('ph','Mobile number (10 digits)','tel','','autocomplete="tel" inputmode="numeric"')+`<div class="f"><label for="cp">Coupon code (optional)</label><div style="display:flex;gap:8px"><input id="cp" type="text" autocomplete="off"><button type="button" class="chip" data-a="coupon">Apply</button></div><small class="err" id="e-cp" role="status"></small></div>`:''}<button class="btn" type="submit">${c.p?'Pay now (demo)':'Start free course'}</button><p class="cap">Demo checkout: no payment is taken and nothing is sent. Try the coupon MTC10.</p></form><aside class="sumbox" id="sum">${sumHTML(c)}</aside></div></section>`},
+done(oid){const o=orders().find(x=>x.oid===oid),c=o&&byId(C,o.cid);if(!c)return nf();return`<section><div class="w"><h1 class="pt">You are enrolled</h1><p>${c.t} is now in My learning.</p><dl class="dl"><dt>Order</dt><dd>${o.oid}</dd><dt>Date</dt><dd>${fmtDate(o.date)}</dd><dt>Name</dt><dd>${esc(o.name)}</dd><dt>Email</dt><dd>${esc(o.email)}</dd><dt>Amount</dt><dd>${o.total?inr(o.total):'Free'}</dd></dl><p style="margin-top:22px"><a class="btn" href="#/my">Open My learning</a></p></div></section>`},
+my(){const os=orders();if(!os.length)return`<section><div class="w"><h1 class="pt">My learning</h1><p>You have no courses yet. <a href="#/courses">Browse courses</a> or start the <a href="#/course/price-action">free course</a>.</p></div></section>`;const pg=store.get('mtc_prog',{});return`<section><div class="w"><h1 class="pt">My learning</h1>${os.map(o=>{const c=byId(C,o.cid),d=pg[o.cid]||[];return`<div class="q" style="max-width:none;margin-bottom:22px"><h3>${c.t}</h3><p class="cap">Order ${o.oid}, ${fmtDate(o.date)}</p><div class="bar2"><i id="pb-${c.id}" style="width:${d.length/c.mods.length*100}%"></i></div><p id="pt-${c.id}" role="status">${d.length} of ${c.mods.length} modules complete</p>${c.mods.map((m,i)=>`<label style="display:flex;gap:10px;align-items:center;min-height:44px"><input type="checkbox" data-mod="${c.id}:${i}" ${d.includes(i)?'checked':''}> ${m}</label>`).join('')}</div>`}).join('')}</div></section>`},
+algo(id){if(id){const a=byId(A,id);if(!a)return nf();return`<section><div class="w"><p><a href="#/algo">All strategies</a></p><h1 class="pt">${a.n}</h1><p style="color:var(--mute);max-width:40em">${a.ty} on ${a.ix}, trades on ${a.day}. Sample data for demonstration.</p><div class="kpis"><div><b class="up">${a.ret}%</b><span>Annual return</span></div><div><b class="dn">${a.dd.toFixed(1)}%</b><span>Max drawdown</span></div><div><b>${a.win.toFixed(0)}%</b><span>Winning months</span></div><div><b>${a.pf.toFixed(2)}</b><span>Profit factor</span></div><div><b>${inr(a.min)}</b><span>Minimum capital</span></div></div><div class="chart">${chartSVG(a.pts,560,260,'Sample equity curve for '+a.n)}<div class="cap">Cumulative return over 29 months, slippage included.</div></div><p style="margin-top:20px"><a class="btn" href="#/portfolio">Run it in the portfolio</a></p></div></section>`}
+return`<section><div class="w"><h1 class="pt">Algo marketplace</h1><p style="color:var(--mute);max-width:40em">Deployment-ready strategies for Nifty and Sensex options, run on AlgoTest. Figures are demo data. Select a column heading to sort.</p><div id="av">${algoView()}</div><div class="note">Running cost besides the course: an AlgoTest plan (a static IP is required for algo orders in India) and execution credits. Check current AlgoTest pricing before you budget.</div></div></section>`},
+portfolio(){return`<section><div class="w"><h1 class="pt">Portfolio engine</h1><p style="color:var(--mute);max-width:40em">Choose capital and risk style. Every figure below is calculated from the same monthly series, so the numbers always agree.</p><div class="split" style="grid-template-columns:260px 1fr"><div><b>Capital</b><div class="ctl" id="cap"></div><b>Risk style</b><div class="ctl" id="risk"></div><label style="display:flex;gap:10px;align-items:center;margin-top:8px"><input type="checkbox" id="slip" ${P.slip?'checked':''}> Include slippage</label></div><div id="pv"></div></div><div class="note">All values are generated sample data, not real backtest or live results. Past performance does not guarantee future returns.</div></div></section>`},
+free(){return`<section><div class="w"><h1 class="pt">Free tools</h1><p style="color:var(--mute);max-width:40em">Three tools that run in your browser and keep your data on this device. For lessons, start the <a href="#/course/price-action">free price-action course</a>.</p><div class="tabs">${[['size','Position size'],['journal','Trade journal'],['plan','Trade plan']].map(([v,t])=>`<button class="chip" data-a="tool" data-v="${v}" aria-pressed="${TOOL===v}">${t}</button>`).join('')}</div><div id="tv">${toolView()}</div><p class="note">Saved in this browser only. Clearing site data removes it.</p></div></section>`},
+finder(){return`<section><div class="w"><h1 class="pt">Options style finder</h1><div class="q" id="quiz" style="max-width:680px">${quizView()}</div></div></section>`},
+about(){return`<section><div class="w split"><div><h1 class="pt">About</h1><p>We believe trading is part analysis and mostly psychology. Marathi Trader Club exists so that a salaried person can learn it step by step, with rules, a journal and honest numbers.</p><p style="color:var(--mute)">Founder profile, credentials and testimonials go here once you add your own.</p></div><div class="q"><h3>Contact</h3><p>Email: <a href="mailto:hello@marathitraderclub.example">hello@marathitraderclub.example</a><br>Phone: <a href="tel:+910000000000">+91 00000 00000</a><br>Telegram and Instagram: @marathitraderclub</p></div></div></section>`}};
+function mount(k){if(k==='portfolio'){const d=()=>{$('#cap').innerHTML=CAPS.map((c,i)=>`<button class="chip" data-a="pc" data-v="${i}" aria-pressed="${i===P.ci}">${inr(c)}</button>`).join('');$('#risk').innerHTML=RISKS.map((r,i)=>`<button class="chip" data-a="pr" data-v="${i}" aria-pressed="${i===P.ri}">${r[0]}</button>`).join('');$('#pv').innerHTML=pView()};window.pDraw=d;d()}if(k==='free'&&TOOL==='size')calcSize()}
+const NAV={courses:'courses',course:'courses',enroll:'courses',my:'my',done:'my',algo:'algo',portfolio:'portfolio',free:'free',finder:'finder'};
+function route(){const parts=location.hash.replace(/^#\/?/,'').split('/').filter(Boolean),k=parts[0]||'home',fn=pages[k];app.innerHTML=fn?fn(...parts.slice(1)):nf();mount(fn?k:'');document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#/'+(NAV[k]||k)));const h=app.querySelector('h1');document.title=k==='home'||!h?'Marathi Trader Club | Learn. Trade. Automate.':h.textContent+' | Marathi Trader Club';window.scrollTo(0,0);app.focus({preventScroll:true})}
+function setTheme(init){const root=document.documentElement,os=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';let t=store.get('mtc_theme',null);if(!init){t=(t||os)==='dark'?'light':'dark';store.set('mtc_theme',t)}if(t)root.dataset.theme=t;$('#th').textContent=(t||os)==='dark'?'Light mode':'Dark mode'}
+const keep=b=>{const d=b.dataset,n=document.querySelector('[data-a="'+d.a+'"]'+(d.v!==undefined?'[data-v="'+d.v+'"]':'')+(d.k!==undefined?'[data-k="'+d.k+'"]':''));n&&n.focus()};
+const fv=(id,ok,msg)=>{const i=$('#'+id),e=$('#e-'+id);i.setAttribute('aria-invalid',!ok);e.textContent=ok?'':msg;return ok};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a,v=b.dataset.v,k=b.dataset.k;
+if(a==='theme')return setTheme();
+if(a==='fc'){CF=v;$('#cl').innerHTML=courseList();return keep(b)}
+if(a==='fix'||a==='fg'||a==='sort'){if(a==='fix')F.ix=v;if(a==='fg')F.g=v;if(a==='sort'){F.dir=F.key===k?-F.dir:(k==='n'||k==='ix'||k==='day'||k==='ty'?1:-1);F.key=k}$('#av').innerHTML=algoView();return keep(b)}
+if(a==='pc'||a==='pr'){P[a==='pc'?'ci':'ri']=+v;window.pDraw();return keep(b)}
+if(a==='tool'){TOOL=v;$('#tv').innerHTML=toolView();document.querySelectorAll('[data-a="tool"]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v===v));if(v==='size')calcSize();return}
+if(a==='coupon'){const code=$('#cp').value.trim().toUpperCase(),m=$('#e-cp');if(!code){CP='';m.className='err';m.textContent='Enter a code first.'}else if(COUPONS[code]){CP=code;m.className='err ok';m.textContent=COUPONS[code]+'% off applied.'}else{CP='';m.className='err';m.textContent='This code is not valid.'}$('#sum').innerHTML=sumHTML(byId(C,CID));return}
+if(a==='qans'){qa[qi]=+k;qi++;$('#quiz').innerHTML=quizView();const h=$('#quiz h2');h&&h.focus();return}
+if(a==='qback'){qi--;qa.length=qi;$('#quiz').innerHTML=quizView();const h=$('#quiz h2');h&&h.focus();return}
+if(a==='qreset'){qi=0;qa=[];$('#quiz').innerHTML=quizView();const h=$('#quiz h2');h&&h.focus();return}
+if(a==='jdel'){const T=store.get('mtc_trades',[]);T.splice(+b.dataset.i,1);store.set('mtc_trades',T);$('#tv').innerHTML=toolView();return}
+if(a==='jclear'){if(b.dataset.armed){store.set('mtc_trades',[]);$('#tv').innerHTML=toolView()}else{b.dataset.armed=1;b.textContent='Select again to confirm';setTimeout(()=>{if(b.isConnected){delete b.dataset.armed;b.textContent='Clear all trades'}},4000)}}});
+document.addEventListener('input',e=>{const t=e.target;if(t.dataset.z!==undefined)calcSize();if(t.dataset.p!==undefined){const p=store.get('mtc_plan',[]);p[+t.dataset.p]=t.value;store.set('mtc_plan',p);$('#pp').textContent=p.filter(x=>x&&x.trim()).length+' of 9 steps written'}});
+document.addEventListener('change',e=>{const t=e.target;if(t.id==='slip'){P.slip=t.checked;window.pDraw()}if(t.dataset.mod){const[id,i]=t.dataset.mod.split(':'),pg=store.get('mtc_prog',{}),d=new Set(pg[id]||[]);t.checked?d.add(+i):d.delete(+i);pg[id]=[...d];store.set('mtc_prog',pg);const n=byId(C,id).mods.length;$('#pb-'+id).style.width=d.size/n*100+'%';$('#pt-'+id).textContent=d.size+' of '+n+' modules complete'}});
+document.addEventListener('submit',e=>{e.preventDefault();const f=e.target;
+if(f.id==='enr'){const c=byId(C,CID),v={n:$('#name').value.trim(),m:$('#email').value.trim(),p:c.p?$('#ph').value.replace(/[\s-]/g,''):''};const ok=[fv('name',v.n.length>=2,'Enter your full name.'),fv('email',/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.m),'Enter a valid email address.')];if(c.p)ok.push(fv('ph',/^[6-9]\d{9}$/.test(v.p),'Enter a 10-digit Indian mobile number.'));if(ok.includes(false)){f.querySelector('[aria-invalid="true"]').focus();return}const oid='MTC'+Date.now().toString(36).toUpperCase(),os=orders();os.push({oid,cid:c.id,total:cost(c,CP).total,name:v.n,email:v.m,date:new Date().toISOString(),code:CP});store.set('mtc_orders',os);location.hash='#/done/'+oid}
+if(f.id==='jf'){const g=i=>$('#j-'+i).value.trim(),T=store.get('mtc_trades',[]),t={d:g('d'),sym:g('s'),side:g('side'),en:parseFloat(g('en')),ex:parseFloat(g('ex')),q:parseInt(g('q'),10)},m=$('#jm');const err=!t.d?'Choose a date.':!t.sym?'Enter a symbol.':!(t.en>0)?'Enter an entry price above zero.':!(t.ex>0)?'Enter an exit price above zero.':!(t.q>0)?'Enter a whole quantity of at least 1.':'';if(err){m.textContent=err;return}T.push(t);store.set('mtc_trades',T);$('#tv').innerHTML=toolView();$('#j-s').focus()}});
+addEventListener('hashchange',route);setTheme(true);route();
+</script>
+</body>
+</html>
